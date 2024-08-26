@@ -1,0 +1,13 @@
+<div class="box-container">
+  <div class="card">
+    <p class="card_description"><%= params[:question] %></p>
+    <p class="card_author">- You</p>
+  </div>
+
+  <div class="card card_warning">
+    <p class="card_description"><%= @answer_coach %></p>
+    <p class="card_author">- You</p>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path %>
+</div>
